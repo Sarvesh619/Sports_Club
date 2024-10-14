@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/plan2.css">
+  <title>PLANS</title>
+</head>
+<body>
+  <section class="price-comparison">
+    <div class="price-column">
+      <div class="price-header">
+        <div class="price">
+          <div class="per-month">Starting From</div>
+          <div class="dollar-sign">Rs</div>
+          500
+          <div class="per-month">/mo</div>
+        </div>
+        <div class="plan-name">Silver</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <img src="check-circle.svg">
+        Time Access(Limited)
+      </div>
+      <div class="feature">
+        <img src="check-circle.svg">
+        Equipment Access(Limited) 
+      </div>
+      <div class="feature inactive">
+        <img src="x-square.svg">
+        Free Meal
+      </div>
+      <div class="feature inactive">
+        <img src="x-square.svg">
+        Gym Access
+      </div>
+      <div class="feature inactive">
+        <img src="x-square.svg">
+        Private Rest Room
+      </div>
+      <div class="feature inactive">
+        <img src="x-square.svg">
+        Television Access
+      </div>
+      <button class="cta">Check Sports Section to Book</button>
+    </div>
+    <div class="price-column popular">
+      <div class="most-popular">Most Popular</div>
+      <div class="price-header">
+        <div class="price">
+          <div class="per-month">Starting From</div>
+          <div class="dollar-sign">Rs</div>
+          1000
+          <div class="per-month">/mo</div>
+        </div>
+        <div class="plan-name">Gold</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <img src="check-circle.svg">
+        Time Access(Limited)
+      </div>
+      <div class="feature">
+        <img src="check-circle.svg">
+        Equipment Access(Limited) 
+      </div>
+      <div class="feature active">
+        <img src="check-circle.svg">
+        Free Meal
+      </div>
+      <div class="feature active">
+        <img src="check-circle.svg">
+        Gym Access
+      </div>
+      <div class="feature inactive">
+        <img src="x-square.svg">
+        Private Rest Room
+      </div>
+      <div class="feature inactive">
+        <img src="x-square.svg">
+        Television Access
+      </div>
+      <button class="cta">Check Sports Section to Book</button>
+    </div>
+    <div class="price-column">
+      <div class="price-header">
+        <div class="price">
+          <div class="per-month">Starting From</div>
+          <div class="dollar-sign">Rs</div>
+          1500
+          <div class="per-month">/mo</div>
+        </div>
+        <div class="plan-name">Platinum</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        <img src="check-circle.svg">
+        Time Access(Limited)
+      </div>
+      <div class="feature">
+        <img src="check-circle.svg">
+        Equipment Access(Limited) 
+      </div>
+      <div class="feature active">
+        <img src="check-circle.svg">
+        Free Meal
+      </div>
+      <div class="feature active">
+        <img src="check-circle.svg">
+        Gym Access
+      </div>
+      <div class="feature active">
+        <img src="check-circle.svg">
+        Private Rest Room
+      </div>
+      <div class="feature active">
+        <img src="check-circle.svg">
+        Television Access
+      </div>
+      <button class="cta">Check Sports Section to Book</button>
+    </div>
+  </section>
+</body>
+</html>
+
+<style type ="text/css">
+
+body {
+      margin: 0;
+      background: url(../images/wallpaper1.jpg);
+      background-size: cover;
+    }
+
+    .price-column {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .price-column::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+      transform: skewX(-30deg);
+      transition: left 0.3s ease;
+      z-index: 1;
+    }
+
+    .price-column:hover {
+      transform: scale(1.1);
+    }
+
+    .price-column:hover::after {
+      left: 0;
+    }
+</style>
